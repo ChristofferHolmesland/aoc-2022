@@ -21,4 +21,8 @@ def task_one(text, num=4):
     
     return -1
 
-print(task_one(text))
+def runner():
+    for x in range(1000):
+        task_one(text)
+
+runner()
